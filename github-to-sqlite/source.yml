@@ -1,0 +1,21 @@
+kind: source
+spec:
+  name: github
+  path: cloudquery/github
+  version: "v4.1.0"
+  tables: ["*"]
+  destinations: ["sqlite"]
+  spec:
+    # Required configuration: Personal Access Token or App Authentication
+    access_token: ${GITHUB_ACCESS_TOKEN}
+    
+    # Required configuration: orgs or repos
+    repos: $GITHUB_REPOSITORIES
+
+    ## App Authentication (one per org):
+    # app_auth:
+    # - org: cloudquery
+    #   private_key_path: <PATH_TO_PRIVATE_KEY> # Path to private key file
+    #   app_id: <YOUR_APP_ID> # App ID, required for App Authentication.
+    #   installation_id: <ORG_INSTALLATION_ID> # Installation ID for this org
+    # orgs: [] # Optional. List of organizations to extract from

@@ -1,0 +1,6 @@
+.DS_Store
+.cq/
+.source.yml.swp
+cloudquery.log
+output.csv
+*.sqlite
