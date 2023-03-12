@@ -1,21 +1,8 @@
-# Cloudquery 101
+# Github to Sqlite
 
-Install cloudquery:
+I wanted a light first pipeline that is repeatable for most readers.
 
-``` shell
-brew install cloudquery/tap/cloudquery 
-```
+If you don't have an account, considering creating one and forking a few interesting repos.
+Without repos on your account, CloudQuery has little data to ingest.
 
-or 
-
-``` shell
-curl -L https://github.com/cloudquery/cloudquery/releases/download/cli-v2.4.1/cloudquery_darwin_amd64 -o cloudquery
-chmod a+x cloudquery
-```
-
-execute job: 
-
-``` bash
-chomod +x run.sh
-bash run.sh
-```
+Enjoy.
